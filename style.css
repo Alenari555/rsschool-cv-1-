@@ -1,0 +1,75 @@
+
+.name {
+    font-size: 15px;
+    background-color: rgb(250, 215, 227);
+    color: black;
+    text-align: center;
+    float: left;
+    width: 30%;
+    border: 1px solid black;
+
+}
+.pic {
+    height: 110px;
+    width: 110px;
+    margin-top: 5%;
+}
+
+.contact {
+margin: 5%;
+}
+
+#contact_style {
+    font-size: 15px;
+    background-color: rgb(101, 8, 101);
+    color: white;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.email {
+    font-weight: bold;
+}
+.number {
+    font-weight: bold;
+}
+
+.discord {
+    font-weight: bold;
+}
+
+.skills {
+    color: white;
+    background-color:rgb(101, 8, 101);
+    width: 55%;
+    margin-right: 23%;
+    margin-left: 23%;
+}
+
+.course {
+    text-align: left;
+    margin-left: 25%;
+}
+
+.about {
+    float: right;
+    background-color: rgb(250, 215, 227);
+    width: 60%;
+    font-size: 15px;
+    border: 1px solid rgb(101, 8, 101);
+}
+
+.header {
+    font-weight: bold;
+    text-align: left;
+    background-color: rgb(101, 8, 101);
+    color: white;
+    width: 30%;
+}
+
+.link {
+    font-size: larger;
+    font-weight: bold;
+    margin: 1%;
+}

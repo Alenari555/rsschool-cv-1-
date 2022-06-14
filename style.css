@@ -1,10 +1,10 @@
 @font-face { 
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     src: url(assets\fonts\Roboto.ttf);
 }
 
 body {
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: Roboto, sans-serif;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ body {
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
-    color: #010b03;
+    color: #fcdeea;
      
   }
 
@@ -105,7 +105,7 @@ body {
 
   .link {
     text-decoration: none;
-    color: #16c22d;
+    color: #e03da5;
     transition: color 0.5s;
   }
   
@@ -113,12 +113,38 @@ body {
     color: #e03da5;
   }
 
+  a { color: #e03da5;}
+  a:hover {color: gray;}
 
-.position {
+
+.profession {
   font-size: 20px;
   margin-left: 5%;
 }
 
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav {
+  background-color: #900c54;
+  margin-left: 40%;
+}
+
+.profession {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 .contact {
- padding-left: 5%;
+  margin-left: 5%;
+  font-weight: bolder;
+}
+
+.text {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 5%;
 }

@@ -17,6 +17,8 @@ body {
 .pic {
     height: 120px;
     width: 120px;
+    margin-top: 5%;
+    margin-left: 30%;
 }
 
 * {
@@ -83,7 +85,7 @@ body {
     }
   }
 
-  
+
   body {
     font-family: Roboto, sans-serif;
     font-size: 20px;
@@ -96,7 +98,9 @@ body {
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 5px;
-    color: #390520;
+    color: #fef6fa;
+    background-color: rgb(77, 7, 56);
+    margin: 5%;
   }
 
   .link {
@@ -109,7 +113,12 @@ body {
     color: #e03da5;
   }
 
-.git {
-  background-color: rgb(239, 203, 228);
-  float: center;
+
+.position {
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+.contact {
+ padding-left: 5%;
 }

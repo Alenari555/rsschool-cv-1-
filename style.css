@@ -1,0 +1,153 @@
+@font-face { 
+    font-family: Roboto, sans-serif;
+    src: url(assets\fonts\Roboto.ttf);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.pic {
+    height: 120px;
+    width: 120px;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .html {
+    scroll-behavior: smooth; 
+  }
+
+  .nav-list {
+    list-style: none;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #fcdeea;
+     
+  }
+
+  .nav-link :hover {
+    transition: .3s;
+    cursor: pointer;
+    color: #e31196;
+  }
+
+
+  .section-item a :hover {
+    color: #770641;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+
+  .section-item a:hover {
+    color: #d11f7ead;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section {
+    width: 50%;
+    background-color: antiquewhite;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+
+  body {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #33051cd8;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #fef6fa;
+    background-color: rgb(77, 7, 56);
+    margin: 5%;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #e03da5;
+    transition: color 0.5s;
+  }
+  
+  .link:hover {
+    color: #e03da5;
+  }
+
+  a { color: #e03da5;}
+  a:hover {color: gray;}
+
+
+.profession {
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav {
+  background-color: #900c54;
+  margin-left: 40%;
+}
+
+.profession {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.contact {
+  margin-left: 5%;
+  font-weight: bolder;
+}
+
+.text {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 5%;
+}
+

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #0D606F;
+    min-height: 100vh;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.wrapper {
+    max-width: 1117px;
+    margin: 0 auto;
+}
+/*Header styles start*/
+.header {
+    background-color: rgba(242, 120, 92, 0.7);;
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    margin-left: 120px;
+    margin-right: 158px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: Magra;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38.88px;
+}
+
+.header-item {
+    margin-top: 40px;
+    margin-right: 42px;
+    margin-bottom: 30px;
+}
+
+.header-item:last-child {
+margin-right: 0;
+}
+
+.header-link {
+width: 105px;
+height: 21px;
+font-family: 'Red Hat Text';
+font-style: normal;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.header-link:hover, .header-link:focus, .header-link:active {
+opacity: .75;
+}
+
+/*Header styles end*/
+
+
+.intro {
+    min-height: 500vh;
+    background: url(../travel/image/bg.jpg) no-repeat top;
+    background-size: cover;
+    padding-top: 122px;
+    padding-left: 120px;
+    padding-right: 433px;
+}
+
+.intro-title {
+    width: 892px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    color: white;
+    font-family: Aleo;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 46px;
+}
+
+.search-form-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form-field {
+    width: 892px;
+    height: 95px;
+    left: 120px;
+    top: 416px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+}
+
+.search-form-submit {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 32px;
+gap: 10px;
+
+position: absolute;
+width: 228px;
+height: 59px;
+left: 1000px;
+top: 515px;
+
+background: #0D606F;
+box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+border-radius: 10px;
+}
+
+.search-form-wrap {
+    border: none;
+}

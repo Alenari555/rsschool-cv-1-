@@ -13,12 +13,12 @@ body {
     line-height: 24px;
     font-weight: normal;
     color: #0D606F;
-    min-height: 100vh;
+    position: relative;
+    width: 1440px;
+    overflow-x: hidden;
+
 }
 
-*::before, *::after {
-    box-sizing: inherit;
-}
 
 body {
   display: flex;
@@ -26,16 +26,11 @@ body {
   justify-content: space-between;
 }
 
-
-.wrapper {
-    max-width: 1117px;
-    margin: 0 auto;
-}
 /*Header styles start*/
 .header {
     background-color: rgba(242, 120, 92, 0.7);;
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -52,6 +47,7 @@ body {
 .header-list {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .header-logo {
@@ -92,33 +88,51 @@ opacity: .75;
 
 /*Header styles end*/
 
+/*Intro style start*/
 
 .intro {
-    min-height: 500vh;
-    background: url(../travel/image/bg.jpg) no-repeat top;
+    height: 3735px;
+    width: 1440px;
+    background: url(./image/bg.jpg) no-repeat top;
     background-size: cover;
-    padding-top: 122px;
-    padding-left: 120px;
-    padding-right: 433px;
 }
 
 .intro-title {
+    position: absolute;
     width: 892px;
-    color: #FFFFFF;
+    height: 422px;
+    left: 120px;
+    top: 122px;
+    
+    font-family: 'Aleo';
+    font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 96px;
-    margin-bottom: 25px;
+    
+    color: #FFFFFF;
+
 }
 
 .intro-text {
-    color: white;
-    font-family: Aleo;
+    position: absolute;
+    width: 723px;
+    height: 24px;
+    left: 120px;
+    right: 597px;
+    top: 346px;
+   
+    margin-bottom: 46px;
+    
+    font-family: 'Aleo';
     font-style: italic;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 46px;
+    /* identical to box height */
+    
+    color: #FFFFFF;
+
 }
 
 .search-form-info{
@@ -127,6 +141,7 @@ opacity: .75;
 }
 
 .search-form-field {
+    position: absolute;
     width: 892px;
     height: 95px;
     left: 120px;
@@ -140,27 +155,442 @@ opacity: .75;
     font-size: 24px;
     line-height: 29px;
     color: #F2785C;
-}
-
-.search-form-submit {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 32px;
-gap: 10px;
-
-position: absolute;
-width: 228px;
-height: 59px;
-left: 1000px;
-top: 515px;
-
-background: #0D606F;
-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-border-radius: 10px;
+    padding-left: 41px;
 }
 
 .search-form-wrap {
     border: none;
 }
+
+.search-form-field::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+}
+
+.search-form-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    
+
+    position: absolute;
+    width: 228px;
+    height: 59px;
+    left: 766px;
+    top: 434px;
+    
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+
+.search-form-submit:hover, .search-form-submit:focus, .search-form-submit:active{
+    background-color: #07353d;
+}
+/*Intro styles end*/
+
+/*Steps styles start*/
+.steps-wrapper {
+    position: absolute;
+    max-width: 1177;
+    height: 247px;
+    left: 116px;
+    top: 845px;
+    margin: 0 auto;
+}
+
+.steps-title {
+    position: relative;
+    width: 611px;
+    height: 53px;
+    left: calc(50% - 611px/2);
+    top: calc(50% - 53px/2 - 97px);
+    margin-bottom: 40px;
+    
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    /* identical to box height */
+    
+    color: #F2785C;
+    }
+
+.steps-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 154px;
+    width: 1117px;
+    margin: 0 auto;
+}
+
+.steps-card {
+    width: 247px;
+    height: 154px;
+    left: 0px;
+    top: 938px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps-card-pic {
+    width: 100px;
+    height: 100px;
+    left: 73px;
+    top: 938px;
+    margin: 0 auto;
+}
+
+.steps-card-title-1 {
+    width: 247px;
+    height: 24px;
+    left: 0px;
+    top: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #0D606F;
+}
+
+.steps-card-title-2 {
+    width: 222px;
+    height: 24px;
+    left: 0px;
+    top: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #0D606F;
+}
+
+.steps-card-title-3 {
+    width: 317px;
+    height: 24px;
+    left: 0px;
+    top: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #0D606F;
+}
+
+/*Steps styles end*/
+
+/*dictination styles start*/
+
+.distination-wrapper {
+    position: absolute;
+    width: 2520px;
+    height: 1186px;
+    left: -540px;
+    top: 1285px;
+
+}
+
+.distination-title {
+    position: absolute;
+    width: 501px;
+    height: 53px;
+    left: 470px;
+    top: 1186px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    /* identical to box height */
+
+
+    color: #F2785C;
+}
+
+.distination-photo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 84px;
+}
+
+
+.destination-photo-1 {
+    width: 800px;
+    height: 800px;
+    margin: 5px;
+
+}
+
+.destination-photo-2 {
+    width: 800px;
+    height: 800px;
+    margin: 5px;
+    
+}
+
+.destination-photo-3 {
+    width: 800px;
+    height: 800px;
+    margin: 5px;
+
+
+}
+
+.find-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 32px;
+    gap: 10px;
+
+    float: left;
+    position: absolute;
+    width: 300px;
+    height: 59px;
+    top: 900px;
+
+
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+
+.find-button-text {
+    width: 146px;
+    height: 62px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 32px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+    background: #0D606F;
+    border: none;
+    margin: 0 auto;
+
+}
+
+
+/*dictination styles end*/
+
+/*Travel stories start*/
+.travel-story-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1117px;
+}
+
+.travel-story-title{
+    position: absolute;
+    width: 335px;
+    height: 53px;
+    left: 552px;
+    top: 2290px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    /* identical to box height */
+
+    color: #F2785C;
+}
+
+.story-1 {
+    position: absolute;
+    width: 1200px;
+    height: 250px;
+    left: 120px;
+    top: 2444px;
+}
+
+.story-2 {
+    position: absolute;
+    width: 1200px;
+    height: 250px;
+    left: 120px;
+    top: 2724px;
+}
+
+.story-3 {
+    position: absolute;
+    width: 1200px;
+    height: 250px;
+    left: 120px;
+    top: 3004px;
+    
+}
+
+.story-4 {
+    position: absolute;
+    width: 1200px;
+    height: 250px;
+    left: 119px;
+    top: 3284px;
+}
+
+.stories-title {
+    position: absolute;
+    width: 760px;
+    height: 42px;
+    margin-left: 450px;
+    margin-top: 10px;
+
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    /* identical to box height */
+
+    color: #0D606F;
+}
+
+.story-pic {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+}
+
+.stories-text {
+    margin-left: 450px;
+    margin-top: 75px;
+
+    width: 760px;
+    height: 184px;
+
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #0D606F;
+}
+
+.see-more-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+
+    position: absolute;
+    width: 228px;
+    height: 59px;
+    left: 608px;
+    top: 3574px;
+
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+
+.see-more-button-text {
+    width: 156px;
+    height: 32px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    background: #0D606F;
+    border: none;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+/*Travel stories end*/
+
+/*Footer start*/
+.footer {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-text {
+    position: absolute;
+    width: 260px;
+    height: 21px;
+    left: 590px;
+    top: 3680px;
+    
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    
+    color: #FFFFFF;
+}
+
+.footer-social-media-icon {
+    position: absolute;
+    width: 140.96px;
+    height: 33.65px;
+    left: 1178px;
+    margin-top: -50px;
+
+  
+}
+/*Footer end*/

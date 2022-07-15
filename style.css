@@ -1,144 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-html {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0 auto;
-    padding: 0 auto;
-    font-family: 'Aleo', serif;
+body { 
+    font-family: 'Aleo';
     font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #0D606F;
-    position: relative;
-    width: 1440px;
+    color: #ffffff;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+
     overflow-x: hidden;
 
 }
 
-
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.wrapper {
+    width: 14400px;
+    margin-left: -30px;
+    height: 100%;
 }
 
 /*Header styles start*/
 .header {
-    background-color: rgba(242, 120, 92, 0.7);;
-    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 1440px;
     height: 90px;
+    left: -30px;
+    top: -5px;
+    
+
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
 .header-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
+    width: 1320px;
+
+    height: 90px;
+
+}
+
+.header-logo {
+    position: absolute;
+    width: 216px;
+    height: 31px;
+    left: 120px;
+    top: 25px;
 }
 
 .header-list {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 42px;
+
+    position: absolute;
+    width: 527px;
+    height: 21px;
+    left: 494px;
+    top: 35px;
 }
 
-.header-logo {
-    margin-left: 120px;
-    margin-right: 158px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    font-family: Magra;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 38.88px;
+
+.header-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .header-item {
-    margin-top: 40px;
-    margin-right: 42px;
-    margin-bottom: 30px;
-}
+     width: 99px;
+     height: 21px;
+    
 
-.header-item:last-child {
-margin-right: 0;
+     flex: none;
+     order: 0;
+     flex-grow: 0;
 }
 
 .header-link {
-width: 105px;
-height: 21px;
-font-family: 'Red Hat Text';
-font-style: normal;
-font-size: 16px;
-line-height: 21px;
-color: #FFFFFF;
-text-decoration: none;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #ffffff;
+    text-decoration: none;
 }
 
-.header-link:hover, .header-link:focus, .header-link:active {
-opacity: .75;
+.header-link:hover, .header-link:active, .header-link:focus {
+    opacity: 0.75;
 }
 
+.login-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 29px;
+    gap: 10px;
+
+
+
+}
+
+.login-button {
+    position: absolute;
+    width: 103px;
+    height: 41px;
+    left: 1217px;
+    top: 25px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 21px;
+    color: #ffffff;
+
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+}
 /*Header styles end*/
 
 /*Intro style start*/
-
-.intro {
+.main {
     height: 3735px;
     width: 1440px;
     background: url(./image/bg.jpg) no-repeat top;
     background-size: cover;
+    margin-left: -30px;
 }
 
-.intro-title {
+.intro {
     position: absolute;
     width: 892px;
     height: 422px;
     left: 120px;
-    top: 122px;
-    
-    font-family: 'Aleo';
-    font-style: normal;
+    padding-top: 25px;
+
+
+}
+
+.intro-title {
     font-weight: 700;
     font-size: 80px;
     line-height: 96px;
-    
-    color: #FFFFFF;
 
+    margin:0 auto;
 }
 
 .intro-text {
     position: absolute;
     width: 723px;
-    height: 24px;
-    left: 120px;
-    right: 597px;
-    top: 346px;
-   
-    margin-bottom: 46px;
-    
-    font-family: 'Aleo';
+
+
     font-style: italic;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height */
-    
-    color: #FFFFFF;
-
 }
 
-.search-form-info{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .search-form-field {
     position: absolute;
@@ -146,26 +178,23 @@ opacity: .75;
     height: 95px;
     left: 120px;
     top: 416px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 16px;
-    
-    font-family: 'Aleo';
+
     font-style: italic;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: #F2785C;
+
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 16px;
+
     padding-left: 41px;
+
 }
 
-.search-form-wrap {
-    border: none;
-}
 
 .search-form-field::placeholder {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
     color: #F2785C;
 }
 
@@ -176,86 +205,109 @@ opacity: .75;
     align-items: center;
     padding: 10px 32px;
     gap: 10px;
-    
 
     position: absolute;
     width: 228px;
     height: 59px;
     left: 766px;
     top: 434px;
-    
+
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border: none;
+    border-radius: 10px;
 
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    /* identical to box height */
 
+    color: #ffffff;
 
-    color: #FFFFFF;
-    background: #0D606F;
-    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.search-form-submit:hover, .search-form-submit:focus, .search-form-submit:active{
-    background-color: #07353d;
-}
-/*Intro styles end*/
+/*Intro style end*/
 
-/*Steps styles start*/
+/*Steps style start*/
 .steps-wrapper {
     position: absolute;
-    max-width: 1177;
+    width: 1177px;
     height: 247px;
-    left: 116px;
+    left: 131px;
+    right: 132px;
     top: 845px;
-    margin: 0 auto;
+
 }
 
 .steps-title {
-    position: relative;
+    position: absolute;
     width: 611px;
     height: 53px;
     left: calc(50% - 611px/2);
     top: calc(50% - 53px/2 - 97px);
-    margin-bottom: 40px;
-    
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 53px;
-    /* identical to box height */
-    
-    color: #F2785C;
-    }
+
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 53px;
+   
+   margin: 0 auto;
+
+
+   color: #F2785C;
+}
 
 .steps-cards {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    flex-direction: row;
     justify-content: space-between;
+
+    position: absolute;
+    width: 1177px;
     height: 154px;
-    width: 1117px;
-    margin: 0 auto;
+    left: 0px;
+    top: 93px;
+
+
+
 }
 
-.steps-card {
+.steps-card-1 {
     width: 247px;
     height: 154px;
     left: 0px;
-    top: 938px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 398px;
+
+
+}
+
+.steps-card-2 {
+    width: 222px;
+    height: 154px;
+    left: 478px;
+    top: 398px;
+
+}
+
+.steps-card-3 {
+    width: 317px;
+    height: 154px;
+    left: 860px;
+    top: 398px;
+
 }
 
 .steps-card-pic {
     width: 100px;
     height: 100px;
-    left: 73px;
-    top: 938px;
+    left: 61px;
+    top: 0px;
+
     margin: 0 auto;
 }
 
@@ -263,16 +315,13 @@ opacity: .75;
     width: 247px;
     height: 24px;
     left: 0px;
-    top: 1068px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 130px;
 
-    font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height */
+/* identical to box height */
 
     color: #0D606F;
 }
@@ -281,16 +330,13 @@ opacity: .75;
     width: 222px;
     height: 24px;
     left: 0px;
-    top: 1068px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 130px;
 
-    font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height */
+/* identical to box height */
 
     color: #0D606F;
 }
@@ -299,31 +345,32 @@ opacity: .75;
     width: 317px;
     height: 24px;
     left: 0px;
-    top: 1068px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    top: 130px;
 
-    font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height */
+/* identical to box height */
 
     color: #0D606F;
 }
 
-/*Steps styles end*/
 
-/*dictination styles start*/
+/*Steps style end*/
 
+
+/*Distination style start*/
 .distination-wrapper {
     position: absolute;
-    width: 2520px;
-    height: 1186px;
-    left: -540px;
+
+    height: 800px;
+    left: -570px;
     top: 1285px;
+
+    margin: 0 auto;
+
+    background-size: auto;
 
 }
 
@@ -339,56 +386,51 @@ opacity: .75;
     font-weight: 500;
     font-size: 40px;
     line-height: 53px;
-    /* identical to box height */
-
 
     color: #F2785C;
+
 }
 
-.distination-photo {
+.distination-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 84px;
+    padding: 0px;
+    gap: 60px;
 }
 
-
-.destination-photo-1 {
+.distination-photo {
     width: 800px;
     height: 800px;
-    margin: 5px;
-
 }
 
-.destination-photo-2 {
-    width: 800px;
-    height: 800px;
-    margin: 5px;
-    
-}
+.scroll {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
 
-.destination-photo-3 {
-    width: 800px;
-    height: 800px;
-    margin: 5px;
-
-
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    left: 681px;
+    top: 2109px;
 }
 
 .find-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 10px 32px;
-    gap: 10px;
 
-    float: left;
+
     position: absolute;
-    width: 300px;
+    width: 228px;
     height: 59px;
-    top: 900px;
-
+    left: 580px;
+    top: 2169px;
 
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -396,52 +438,57 @@ opacity: .75;
 }
 
 .find-button-text {
-    width: 146px;
-    height: 62px;
+    width: 170px;
+    height: 32px;
+    margin: 0 auto;
 
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 27x;
     line-height: 32px;
-    /* identical to box height */
 
     color: #FFFFFF;
     background: #0D606F;
     border: none;
-    margin: 0 auto;
 
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
+/*Distination style end*/
 
-/*dictination styles end*/
-
-/*Travel stories start*/
-.travel-story-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 1117px;
-}
-
-.travel-story-title{
+/*Travel stories style start*/
+.travel-stories-title {
     position: absolute;
     width: 335px;
     height: 53px;
-    left: 552px;
+    left: 560px;
     top: 2290px;
+}
 
+.travel-stroies-title-text {
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 53px;
-    /* identical to box height */
+/* identical to box height */
 
     color: #F2785C;
 }
 
-.story-1 {
+.travel-stories-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+.travel-story-1 {
     position: absolute;
     width: 1200px;
     height: 250px;
@@ -449,7 +496,7 @@ opacity: .75;
     top: 2444px;
 }
 
-.story-2 {
+.travel-story-2 {
     position: absolute;
     width: 1200px;
     height: 250px;
@@ -457,36 +504,38 @@ opacity: .75;
     top: 2724px;
 }
 
-.story-3 {
+.travel-story-3 {
     position: absolute;
     width: 1200px;
     height: 250px;
     left: 120px;
     top: 3004px;
-    
 }
 
-.story-4 {
+.travel-story-4 {
     position: absolute;
     width: 1200px;
     height: 250px;
-    left: 119px;
+    left: 120px;
     top: 3284px;
 }
 
-.stories-title {
+.travel-story-title {
     position: absolute;
     width: 760px;
     height: 42px;
-    margin-left: 450px;
-    margin-top: 10px;
 
-    font-family: 'Aleo';
-    font-style: normal;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    margin-left: 440px;
+
+
     font-weight: 400;
     font-size: 35px;
     line-height: 42px;
-    /* identical to box height */
+
+
 
     color: #0D606F;
 }
@@ -495,21 +544,26 @@ opacity: .75;
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 0px;
-    left: 0px;
+
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
 }
 
-.stories-text {
-    margin-left: 450px;
-    margin-top: 75px;
-
+.travel-story-text {
+    position: absolute;
     width: 760px;
     height: 184px;
 
-    font-family: 'Aleo';
-    font-style: normal;
+
+    
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    margin-left: 440px;
+    margin-top: 60px;
+
+
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -517,7 +571,13 @@ opacity: .75;
     color: #0D606F;
 }
 
-.see-more-button {
+.story-text-more {
+    font-weight: bold;
+    text-decoration-line: underline;
+    color: #0D606F;
+}
+
+.travel-story-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -529,37 +589,47 @@ opacity: .75;
     width: 228px;
     height: 59px;
     left: 608px;
-    top: 3574px;
+    top: 3550px;
 
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
 }
 
-.see-more-button-text {
-    width: 156px;
+.travel-story-button-text {
     height: 32px;
+    width: 161px;
 
+
+    
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     /* identical to box height */
-
-
+    
+    
     color: #FFFFFF;
     background: #0D606F;
     border: none;
-
-
+    
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 1;
     flex-grow: 0;
 }
-/*Travel stories end*/
+
+.travel-story-arrow {
+    font-weight: 500;
+    font-size: 39px;
+
+    background: #0D606F;
+}
+
+/*Travel stories  style end*/
 
 /*Footer start*/
 .footer {
@@ -572,7 +642,7 @@ opacity: .75;
     position: absolute;
     width: 260px;
     height: 21px;
-    left: 590px;
+    left: 635px;
     top: 3680px;
     
     font-family: 'Red Hat Text';
@@ -588,7 +658,7 @@ opacity: .75;
     position: absolute;
     width: 140.96px;
     height: 33.65px;
-    left: 1178px;
+    left: 1148px;
     margin-top: -50px;
 
   
